@@ -1,0 +1,598 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Ministerios de Español</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- BEGIN MULTI ITEM SELECTOR LINKS -->
+        <link rel="stylesheet" type="text/css" href="css/item_slider/style.css">
+		<script src="js/item_slider/modernizr.custom.63321.js"></script>
+        <!-- END MULTI ITEM SELECTOR LINKS -->
+         
+		<!-- BEGIN POPUP LINKS -->
+            <link rel="stylesheet" href="css/modal_popup/reveal.css">   
+            <!-- Attach necessary scripts -->
+                <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+                <script type="text/javascript" src="js/modal_popup/jquery.reveal.js"></script><!--<script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
+        <!-- END POPUP LINKS -->
+
+        <!-- BEGIN SELF WRITTEN -->
+            <link href="css/styles_products.css" rel="stylesheet"   type="text/css">
+        <!-- END SELF WRITTEN -->
+
+<style type="text/css">
+@font-face {
+	font-family: 'avenir';
+	src:
+		local ('Avenir')
+		local ('avenir')
+		url('fonts/avenir.ttc')
+		format: ('truetype');}
+
+body {
+	font: 100%/1.4 Avenir, Helvetica, Verdana, Arial, sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	color: #000;}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 100%;
+	max-width: 1600px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 1024px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo~~ */
+.header {
+	background-image: url(media/images/0-misc/navigation/navi-banner.png);}
+
+	#home-btn {
+		width: 304px;
+		height: 43px;}
+		
+
+#navbar	{
+		position: absolute;
+		top: 5px;
+		right: 0;
+		padding: 0;
+		margin: 0;}
+
+	.navbar li 	{
+			height: auto;
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: left;  /* All text is placed in the left of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal 13px/1.4em Avenir, Helvetica, Verdana, Arial, sans-serif;
+			padding: 0;
+			margin: 0;}
+
+	.navbar a	{							
+			padding: 9px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+			border-left: 0px solid; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+			border-right: 0px solid; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+			text-decoration: none;  /* Removes the default hyperlink styling. */
+			color: black; /* Text color is black */
+			display: block;}
+	.navbar li:hover, a:hover {
+			color: #2791f0;
+			background-color: transparent;} 
+	.navbar li ul 	{
+			display: none;  /* Hides the drop-down menu */
+			height: auto;
+			width: 40px;
+			margin: 0; /* Aligns drop-down box underneath the menu item */
+			padding: 0; /* Aligns drop-down box underneath the menu item */}				
+	.navbar li:hover ul {
+			display: block; /* Displays the drop-down box when the menu item is hovered over */}
+	.navbar li ul li {background-color: #000;} 
+	.navbar li ul li a 	{
+			min-width: 100px;
+			max-width: 400px;
+			color: #fff;
+			border-left: 1px solid #666; 
+			border-right: 1px solid #666; 
+			border-top: 1px solid #666; 
+			border-bottom: 1px solid #666;}
+	.navbar li ul li a:hover	{
+			min-width: 100px;
+			max-width: 400px;
+			color: #2791f0;
+			background-color:#333;}		
+
+	/*#home {width: 72px;}
+	#media {width: 72px;}
+	#connect {width: 90px;}
+	#ministry {width: 150px;}
+	#missions {width: 76px;}
+	#our-story {width: 72px;}
+	#give {width: 72px;}
+	#contact {width: 72px;}*/
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.*/
+
+.content {padding: 0px 0;}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */}
+
+.slide{
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);}
+.btn {
+	color: #fff;
+	font: 18px/2em Avenir, Helvetica, Verdana, Arial, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 4px;
+	margin-left: 10px;
+	width: 200px;
+	height: 41px;
+	background-image: url(media/images/0-misc/btn-bg.png);
+	float: left;}
+#single-btn {
+	position: absolute;
+	left: 40%;}
+
+.grey-title {
+	position: relative;
+	color: #555;
+	font: 36px/1.4em Avenir, Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	width: 900px;
+	height: 40px;
+	left: 18%;
+	top: 30px;}
+.grey-text {
+	position: relative;
+	color: #555;
+	font: normal lighter 30px/1.4em Avenir, Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	width: 900px;
+	height: 300px;
+	left: 18%;
+	top: 60px;}
+.white-title {
+	position: relative;
+	color: #fff;
+	font: 36px/1.4em Avenir, Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	width: 900px;
+	height: 40px;
+	left: 18%;
+	top: 30px;}
+.white-text {
+	position: relative;
+	color: #fff;
+	font: normal lighter 30px/1.4em Avenir, Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	width: 900px;
+	height: 300px;
+	left: 18%;
+	top: 60px;}
+
+
+#slide1 {
+	height: 768px;
+	width: 100%;
+	background-image: url(media/images/4d-espanol/4d-sect1-bg.png);
+	background-size:cover;}
+	#slide1-title {
+		position: relative;
+		width: 957px;
+		height: 172px;
+		top: 250px;
+		left: 15%;}
+	#slide1-btns{
+		position: relative;
+		width: 600px;
+		height: 41px;
+		top: 275px;
+		left: 35%;
+		display: none;
+		}
+	#down-page {
+		position: relative;
+		width: 48px;
+		height: 48px;
+		top: 500px;
+		left: 48.5%;}
+
+#slide2 {
+	background-image:url(media/images/4d-espanol/4d-sect2-bg.png);
+	height: 363px;}
+	#slide2-text {
+		position: relative;
+		width: 813px;
+		height: 206px;
+		top: 65px;
+		left: 21%;}
+
+#slide3 {
+	background-image:url(media/images/4d-espanol/4d-sect3-bg.png);
+	background-size: cover;
+	height: 466px;}
+	#slide3-title {
+		position: relative;
+		top: 30px;
+		left: 19%;
+		width: 837px;
+		height: 46px;}
+	#slide3-text {
+		position: relative;
+		top: 60px;
+		left: 16%;
+		width: 905px;
+		height: 217px;}
+	#slide3-btn {
+		position: relative;
+		top: 100px;
+		left: 40%;
+		width: 200px;
+		height: 41px;}
+	
+#slide4 {
+	background-image: url(media/images/4d-espanol/4d-sect4-bg.png);
+	background-size: cover;
+	height: 714px;
+	display: none;
+	}
+	#slide4-title {
+		position: relative;
+		top: 30px;
+		left: 20%;
+		width: 792px;
+		height: 326px;}
+	#slide4-text {
+		position: relative;
+		top: 50px;
+		left: 16%;
+		width: 919px;
+		height: 219px;}
+	#slide4-btns {
+		position: relative;
+		top: 90px;
+		left: 41.5%;
+		width: 415px;
+		height: 64px;
+		}
+
+#slide5 {
+	background-image: url(media/images/4d-espanol/4d-sect5-bg.png);
+	background-size: cover;
+	height: 647px;}	
+	#slide5-title {
+		position: relative;
+		top: 40px;
+		left: 22%;
+		width: 743px;
+		height: 100px;}
+	#slide5-text {
+		position: relative;
+		top: 75px;
+		left: 16%;
+		width: 838px;
+		height: 175px;
+		}
+	#slide5-btn {
+		position: relative;
+		top: 300px;
+		left: 41.5%;
+		width: 402px;
+		height: 64px;
+		}
+
+	
+#slide6 {
+	background-image: url(media/images/4d-espanol/4d-sect6-bg.png);
+	height: 487px;}
+	#slide6-title {
+		position: relative;
+		top: 40px;
+		left: 25%;
+		width: 664px;
+		height: 79px;}
+	#slide6-text {
+		position: relative;
+		top: 75px;
+		left: 17%;
+		width: 897px;
+		height: 217px;
+		}
+	#slide6-btn {
+		position: relative;
+		top: 100px;
+		left: 41.5%;
+		width: 200px;
+		height: 41px;
+		}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background: #d7d7d7;
+}
+
+	.footer-column {
+		position: absolute;
+		top: 3605px;
+		width: 230px;
+		height: 250px;}
+	
+		#column1 {
+			left: 5%;}
+			
+		#column2 {
+			left: 30%;}
+		
+		#column3 {
+			left: 55%;}
+			
+		#column4 {
+			left: 78%;}
+
+		#starting-line-footer {
+			position: relative;
+			padding-left: 5px;}
+		#growth-and-recovery-footer {
+			position: relative;
+			padding-left: 5px;}
+		.footer-third-row {
+			position: relative;
+			top: 2px;}
+		
+	#social-media {
+		position: relative;
+		width: 100%;
+		top: 8px;
+		left: 40%;
+		background: #d7d7d7;
+		}
+	#page-up {
+		position: absolute;
+		right: 0px;
+		}
+
+
+
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	//navi-script
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+	
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+</script>
+
+<script>
+	$(document).ready(function() {
+	  function filterPath(string) {
+		return string
+		  .replace(/^\//,'')
+		  .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+		  .replace(/\/$/,'');
+	  }
+	  $('a[href*=#]').each(function() {
+		if ( filterPath(location.pathname) == filterPath(this.pathname)
+		&& location.hostname == this.hostname
+		&& this.hash.replace(/#/,'') ) {
+		  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		   if ($target) {
+			 var targetOffset = $target.offset().top;
+			 $(this).click(function() {
+			   $('html, body').animate({scrollTop: targetOffset}, 500);
+			   return false;
+			 });
+		  }
+		}
+	  });
+	});
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+	
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+</script>
+
+</head>
+
+<body onLoad="MM_preloadImages('media/images/0-misc/footer/footer-mynbcc-on.png','media/images/0-misc/footer/footer-calendar-on.png','media/images/0-misc/footer/footer-serve-on.png','media/images/0-misc/footer/footer-privacy-policy-on.png','media/images/0-misc/footer/footer-childdedications-on.png','media/images/0-misc/footer/footer-baptisms-on.png','media/images/0-misc/footer/footer-growth-and-recovery-on.png','media/images/0-misc/footer/footer-life-groups-on.png','media/images/0-misc/footer/footer-kids-on.png','media/images/0-misc/footer/footer-student-and-ya-on.png','media/images/0-misc/footer/footer-starting-line-on.png','media/images/0-misc/footer/footer-espanol-on.png','media/images/0-misc/footer/footer-brightbeginnings-on.png','media/images/0-misc/footer/footer-community-on.png','media/images/0-misc/footer/footer-mission-trips-on.png','media/images/0-misc/footer/footer-give-to-missions-on.png')">
+
+
+
+
+<div class="container">
+  <div class="header">
+	<a href="index.html"><img src="media/images/0-misc/navigation/navi-logo-home.png" alt="Insert Logo Here" name="Insert_logo" width="20%" height="90" id="home-btn" style="display:block;"></a> 
+  	<div id="navbar">
+		<ul class="navbar">
+			<li id="home"><a href="index.html"><p>HOME</p></a></li>
+			<li id="media"><a href="media.html"><p>MEDIA</p></a></li>
+			<li id="connect"><a href="next-steps.html"><p>CONNECT</p></a>
+				<ul>
+			    	<li><a href="next-steps.html"><p>Next Steps</p></a></li>
+					<li><a href="serve.html"><p>Serve</p></a></li>
+					<li><a href="next-steps.html"><p>Life Groups</p></a></li>
+				</ul>
+			</li>
+			<li id="ministry"><a href="kids-ministry.html"><p>MINISTRY</p></a>
+				<ul>
+					<li><a href="kids-ministry.html"><p>Super Kid's</p></a></li>
+					<li><a href="student-and-young-adult-ministry.html"><p>Students & Young Adults</p></a></li>
+					<li><a href="adult-ministry.html"><p>Adult</p></a></li>
+					<li><a href="next-steps.html"><p>Life Groups</p></a></li>
+					<li><a href="espanol.html"><p>Español</p></a></li>
+					<li><a href="growth-and-recovery.html"><p>Growth & Recovery</p></a></li>
+				</ul>         
+			</li>
+			<li id="missions"><a href="missions.html"><p>MISSIONS</p></a></li>
+			<li id="our-story"><a href="our-story.html"><p>OUR STORY</p></a></li>
+			<li id="give"><a href="give.html"><p>GIVE</p></a></li>
+			<li id="contact"><a href="contact.html"><p>CONTACT</p></a></li>
+		</ul>
+	</div>
+
+    <!-- end .header --></div>
+<div class="content">
+  <div id="slide1" class="slide">
+  	<div id="slide1-title"><img src="media/images/4d-espanol/4d-sect1-title.png" width="957" height="172" alt="Nuevo Comienzo: Iglesia de la commnidad"></div>
+   <div id="slide1-btns">
+   		<a href="#" data-reveal-id="forma-de-conexíon-ppw"><img id="slide1-btn1" src="media/images/4d-espanol/4d-sect1-btn1.png" width="198" height="41" alt="Converge (6th-8th)"></a><img src="media/images/4b-student-ministries/sya-space.png" width="10" height="1"><a href="#slide4"><img id="slide1-btn2" src="media/images/4d-espanol/4d-sect1-btn2.png" width="176" height="41" alt="Capacity (High School)"></a><img src="media/images/4b-student-ministries/sya-space.png" width="10" height="1"><!--<a href="#"><img id="slide1-btn3" src="media/images/4d-espanol/4d-sect1-btn3.png" width="198" height="41" alt="Capacity (High School)"></a>-->
+    </div>
+	<a href="#slide2"><img id="down-page" src="media/images/0-misc/down-arrow.png" width="48" height="48" alt="Scroll Down"></a>
+   </div>
+    <div id="slide2">
+      	<div id="slide2-text"><img src="media/images/4d-espanol/4d-sect2-text.png" width="813" height="206" alt=""></div>
+  	</div>
+    
+    <div id="slide3" class="slide">
+    	<div id="slide3-title"><img src="media/images/4d-espanol/4d-sect3-title.png" width="837" height="46" alt=""></div>
+        <div id="slide3-text"><img src="media/images/4d-espanol/4d-sect3-text.png" width="905" height="217" alt=""></div>
+        <!--<div id="slide3-btn"><a href="#"><img src="media/images/4d-espanol/4d-sect3-btn.png" width="200" height="41" alt="Connect"></a></div>-->
+    </div>
+
+    <div id="slide4">
+    	<div id="slide4-title"><img src="media/images/4d-espanol/4d-sect4-title.png" width="792" height="326" alt=""></div>
+        <div id="slide4-text"><img src="media/images/4d-espanol/4d-sect4-text.png" width="919" height="219" alt=""></div>
+        <div id="slide4-btns"><a href="#" data-reveal-id="life-groups-esp-ppw"><img src="media/images/4d-espanol/4d-sect4-btn1.png" width="200" height="41" alt="Connect"></a><!--<img src="media/images/4c-space.png" width="10" height="1"><a href="# "><img src="media/images/4d-espanol/4d-sect4-btn2.png" width="200" height="41" alt="More About Us"></a>--></div>
+    </div>
+    
+    <div id="slide5"  class="slide"> 
+    	<div id="slide5-title"><img src="media/images/4d-espanol/4d-sect5-title.png" width="743" height="100" alt="Capacity (High School & Young Adult)"></div>
+        <div id="slide5-text"><img src="media/images/4d-espanol/4d-sect5-text.png" width="890" height="356" alt=""></div>
+        <div>
+            <!--<div id="slide5-btn"><a href="mailto:lisa.malama@nbcc.com"><img src="media/images/4d-espanol/4d-sect5-btn.png" width="200" height="41" alt="Connect"></a></div>-->
+     	</div>
+    </div>
+     
+    <div id="slide6">
+     	<div id="slide6-title"><img src="media/images/4d-espanol/4d-sect6-title.png" width="664" height="79" alt="Capacity (High School & Young Adult)"></div>
+        <div id="slide6-text"><img src="media/images/4d-espanol/4d-sect6-text.png" width="897" height="217" alt=""></div>
+        <!--<div>
+            <div id="slide6-btn"><a href="mailto:lisa.malama@nbcc.com"><img src="media/images/4d-espanol/4d-sect6-btn.png" width="200" height="41" alt="Connect"></a></div>-->
+     	</div>
+	</div>
+<!-- end .content --></div>
+
+<!-- /container --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/item_slider/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();});
+		</script> 
+
+<div class="footer">
+<div id="social-media"><a href="https://www.facebook.com/nbccnorco"><img src="media/images/0-misc/footer/facebook-icon.png" width="57" height="55" alt="Facebook" ahref="www"></a><a href="http://instagram.com/nbccnorco"><img src="media/images/0-misc/footer/instagram-icon.png" width="57" height="55" alt="Instagram"></a><a href="https://twitter.com/nbccnorco"><img src="media/images/0-misc/footer/twitter-icon.png" width="57" height="55"><a href="#header"></a>
+   </div>
+  <!-- end .container --></div>
+</body>
+</html>

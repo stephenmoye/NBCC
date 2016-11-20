@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="../dist/snapper.css">
+  <link rel="stylesheet" href="docs.css" />
+  <script src="../src/lib/jquery.js"></script>
+  <script src="../src/lib/overthrow-toss.js"></script>
+  <script src="../src/snapper.js"></script>
+  <style>
+
+  .snapper {
+    margin: 0 20px;
+  }
+
+    /* breakpoints example */
+    @media (min-width: 30em){
+    	.snapper-smallpoints  .snapper_item {
+    	  width: 50%;
+    	}
+      .snapper-smallpoints  .snapper_pane {
+    	  -webkit-scroll-snap-points-x: repeat(50%);
+    	  -ms-scroll-snap-points-x: repeat(50%);
+    	  scroll-snap-points-x: repeat(50%);
+    	}
+    }
+    @media (min-width: 50em){
+      .snapper-smallpoints  .snapper_item {
+    	  width: 33.333%;
+    	}
+      .snapper-smallpoints  .snapper_pane {
+    	  -webkit-scroll-snap-points-x: repeat(33.33333%);
+    	  -ms-scroll-snap-points-x: repeat(33.33333%);
+    	  scroll-snap-points-x: repeat(33.33333%);
+    	}
+    }
+  </style>
+  <script src="/demo-head/loadfont.js"></script>
+  <script>
+    document.documentElement.className += "enhanced";
+    $(function(){
+      $( document ).trigger( "enhance" );
+    });
+  </script>
+</head>
+<body>
+
+  <div class="docs-main">
+
+    <div class="snapper snapper-smallpoints" data-snapper-setwidths data-snapper-nextprev>
+      <div class="snapper_pane_crop">
+        <div class="snapper_pane">
+      		<div class="snapper_items">
+      			<div class="snapper_item" id="img-a4">
+      				<img src="imgs/monkey.jpg" alt="">
+      			</div>
+      			<div class="snapper_item" id="img-b4">
+      				<img src="imgs/large.jpg" alt="">
+      			</div>
+      			<div class="snapper_item" id="img-c4">
+      				<img src="imgs/monks.jpg" alt="">
+      			</div>
+            <div class="snapper_item" id="img-d4">
+      				<img src="imgs/interior.jpg" alt="">
+      			</div>
+      			<div class="snapper_item" id="img-e4">
+      				<img src="imgs/cows.jpg" alt="">
+      			</div>
+      			<div class="snapper_item" id="img-f4">
+      				<img src="imgs/bike.jpg" alt="">
+      			</div>
+      		</div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import 'https://fonts.googleapis.com/css?family=Taviraj:400,600,700';
+
+        * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+	  background-color: #111;
+    }
+
+    .parallax {
+      -webkit-perspective: 80px;
+              perspective: 80px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("/media/images/stars.jpg");
+      background-size: cover;
+	  background-repeat: no-repeat;
+    }
+
+    .parallax__layer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 80vh;
+    }
+    .parallax__layer img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+
+    .parallax__layer__0 {
+      z-index: 3;
+      position: relative;
+      top: 60vh;
+    }
+
+    .parallax__layer__6 {
+      z-index: 4;
+    }
+
+    .parallax__cover {
+		background: #111;
+		background: -webkit-linear-gradient(left, black, black, #024327, black, black); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(left, black, black, #024327, black, black); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(left, black, black, #024327, black, black); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(left, black, black, #024327, black, black); /* Standard syntax */
+		color: white;
+		padding: 20px px;
+		position: absolute;
+		top: 99%;
+		left: 0;
+		right: 0;
+		/*height: 550px;*/
+		max-height: 1100px;
+		z-index: 10;
+    }
+	
+	.tnt-address {
+		text-align: center; 
+		font-family: Taviraj, Helvetica;
+		
+	}
+	
+	.directions-btn {
+		font: normal lighter 30px 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
+		border: 3px solid #fff;
+		width: 210px;
+		margin: 7px auto;
+		text-align: center;
+	}	
+	
+	.parallax__cover para {
+		display: block;
+		padding: 50px;
+	}
+	
+	.parallax__cover h2 {
+	    font-family: Taviraj, Helvetica;
+		font-weight: semi-bold;
+		font-size: 4em;
+		text-align: center;
+		z-index: 10;
+	}
+
+	.parallax__cover p {
+		padding: 25px 0;
+		font-size: 2em;
+		width: 50vw;
+		margin: auto;
+		text-align: justify;
+	}
+	
+    .parallax__layer__0 {
+      -webkit-transform: scale(.75);
+              transform: scale(.75);
+    }
+
+    .parallax__layer__1 {
+      -webkit-transform: translateZ(-125px) scale(3.5);
+              transform: translateZ(-125px) scale(3.5);
+    }
+
+    .parallax__layer__2 {
+      -webkit-transform: translateZ(-100px) scale(4);
+              transform: translateZ(-100px) scale(4);
+    }
+
+    .parallax__layer__3 {
+      -webkit-transform: translateZ(-150px) scale(3);
+              transform: translateZ(-150px) scale(3);
+              z-index: -1;
+    }
+
+    .parallax__layer__4 {
+      /*-webkit-transform: translateZ(-50px) scale(2);
+              transform: translateZ(-50px) scale(2);*/
+			  bottom: 100px;
+    }
+
+    .parallax__layer__5 {
+      -webkit-transform: translateZ(-35px) scale(2);
+              transform: translateZ(-35px) scale(2);
+			  z-index: 1;
+    }
+
+    .parallax__layer__6 {
+      -webkit-transform: translateZ(0px) scale(1);
+              transform: translateZ(0px) scale(1);
+    }
+
+
+	
+	@media (max-width: 1200px) {
+	
+		.parallax {
+			perspective: 150px;
+		}
+	
+	}
+	
+	
+	@media (max-width: 750px) {
+	
+		.parallax {
+			perspective: 200px;
+		}
+	
+	}
+	
+	@media (max-width: 550px) {
+		.parallax {
+			-webkit-perspective: 100px;
+					perspective: 100px;
+		}
+		
+		.tnt-address {
+		font-size: 1.25em;
+		text-align: center; 
+		font-family: Taviraj, Helvetica;
+		width: 100vw;
+		}
+			
+		.parallax__cover para {
+			display: block;
+			padding: 0px;
+		}
+	
+		.parallax__cover h2 {
+			font-weight: semi-bold;
+			font-size: 3em;
+			padding-top: 50px;
+		}
+
+		.parallax__cover p {
+			padding: 25px 0;
+			font-size: 1.25em;
+			font-weight: 300;
+			width: 90vw;
+			margin: auto;
+		}	
+		
+		.parallax__layer img {
+			width: 150vw;
+			left: -23vw;
+		}
+		
+		.parallax__layer__0 {
+			-webkit-transform: scale(.75);
+			transform: scale(0.75);
+			top: 40vh;
+			left: -10px;
+		}
+		
+		.parallax__layer__2 {
+			-webkit-transform: translateZ(-100px) scale(4);
+			transform: translateZ(-100px) scale(4);
+			top: 85vh;
+			left: -5px;
+		}		
+		
+		.parallax__layer__3 {
+			-webkit-transform: translateZ(-140px) scale(3.5);
+			transform: translateZ(-140px) scale(3.5);
+			z-index: -1;
+		}
+		
+		.parallax__layer__5 {
+			-webkit-transform: translateZ(-55px) scale(2.5);
+			transform: translateZ(-55px) scale(2.5);
+			z-index: 1;
+		}		
+		
+		.parallax__layer__6 {
+			/*-webkit-transform: translateZ(0px) scale(1);
+			transform: translateZ(-30px) scale(3);*/
+			width: 20vw;
+		}
+		
+}

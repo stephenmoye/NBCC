@@ -1,0 +1,115 @@
+body {
+  background: #fcf5a6;
+  background-image: url('/media/images/easter/easter-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.easter-content {
+    width: 70%;
+	margin: auto;
+}
+
+.easter-content img{
+	max-width: 100%;
+	display: block;
+}
+
+#easter-heading{ 
+    padding-top: 50px;
+    margin: 0 auto;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    z-index: 99;
+    color: #83DDD6;
+}
+
+#easter-info {
+    padding-top: 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+	max-width: 600px;
+    background: #F7A599;
+    border-radius: 90px;
+}
+
+#easter-text {
+margin: auto;
+    max-width: 650px;
+    font-family: 'Open Sans';
+    display: block;
+    text-align: center;
+	color: white;
+}
+
+#easter-text > h2 {
+	font-family: 'Lobster';
+	font-size: 2.5em;
+	text-shadow: 1px 1px #777;
+}
+
+#easter-text > h1 {
+	font-family: 'Lobster';
+	font-size: 6em;
+	margin: -10px 0 0;
+	text-shadow: 2px 2px #777;
+}
+
+#easter-sheet {
+	background: white;
+	color: #777;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+#easter-sheet > .directions-btn {
+	border: 5px solid #777;
+    width: 60%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#easter-link:hover {
+	color: #999;
+}
+
+#carnival-bullets {
+	display: inline-block;
+	font-family: 'Lato';
+	font-size: 1.50em;
+}
+
+#carnival-bullets li {
+	text-align: left;
+    list-style-image: url('/media/images/easter/easter_egg.png');
+}
+
+@media (max-width: 906px){
+	
+	#easter-heading {
+    padding-top: 100px;
+	width: 125%;
+	}
+
+}
+
+@media (max-width: 650px) {
+	body {
+	font-size: 12px;
+	}
+		#easter-info {
+    padding-top: 40px;
+	width: 100%;
+	}
+	#easter-sheet > .directions-btn{
+	font-size: 20px;
+	width: 86%;
+	border: 3px solid;
+	}
+	
+	
+}
