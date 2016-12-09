@@ -217,7 +217,7 @@ a:hover {
 
 .content {
   padding: 0px 0;
-  background: #333;
+  background: #8c8c8c;
 }
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
 
@@ -327,7 +327,7 @@ a:hover {
 	  color: #777;
 	  font: normal lighter 48px 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
 	  text-shadow: 2px 2px 0px #c1c1c1;
-	  border: 4px solid #777;
+	  border: 3px solid #777;
 	  max-width: 500px;
 	  margin: 30px auto;
 	  background: white;
@@ -338,7 +338,7 @@ a:hover {
     color: #777;
     font: normal lighter 48px 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
     text-shadow: 2px 2px 0px #c1c1c1;
-    border: 4px solid #777;
+    border: 3px solid #777;
     max-width: 820px;
     margin: 30px auto;
     text-transform: uppercase;
@@ -589,6 +589,9 @@ a:hover {
 #nbcc-locations {
         height:400px;
         width:100%;
+        border-top: 5px double gray;
+        border-bottom: 5px double gray;
+        margin: 25px 0;
     }
     .gm-style-iw * {
         display: block;
@@ -651,6 +654,8 @@ a:hover {
 	width: 100%;
     max-width: 300px;
     margin: 5px auto;
+    text-align: center;
+    color: #777;
 }
 
 .map-address {
@@ -762,18 +767,19 @@ p.slidebox {
 }
 
 #welcome-text {
-    font: lighter 10em/1.1em 'Montserrat', sans-serif;
+    font: normal 14em/1em 'Montserrat', sans-serif;
     color: white;
 	width: 100%;
 	text-align: center;
 	cursor: default;
-	/*text-shadow: 4px 4px 0px #5A5A5A;  */
-	text-shadow: 1px 1px 1px #5a5a5a,
-					   2px 2px 1px #5a5a5a,
-					   3px 3px 2px #5a5a5a,
-					   4px 4px 2px #5a5a5a,
-					   5px 5px 2px #5a5a5a,
-					   6px 6px 2px #5a5a5a;
+    padding: 25px 0;
+	/*text-shadow: 4px 4px 0px #5A5A5A;
+	    text-shadow: 1px 1px 1px #5a5a5a,
+                     2px 2px 0px #5a5a5a,
+                     3px 3px 0px #5a5a5a,
+                     4px 4px 0px #5a5a5a,
+                     5px 5px 0px #5a5a5a,
+                     6px 6px 0px #5a5a5a;*/
 }
 
 #welcome-text-jv {
@@ -782,11 +788,11 @@ p.slidebox {
 	width: 100%;
 	text-align: center;
 	text-shadow: 1px 1px 1px #5a5a5a,
-					   2px 2px 1px #5a5a5a,
-					   3px 3px 2px #5a5a5a,
-					   4px 4px 2px #5a5a5a,
-					   5px 5px 2px #5a5a5a,
-					   6px 6px 2px #5a5a5a;
+                 2px 2px 0px #5a5a5a,
+                 3px 3px 0px #5a5a5a,
+                 4px 4px 0px #5a5a5a,
+                 5px 5px 0px #5a5a5a,
+                 6px 6px 0px #5a5a5a;
 }
 
 #welcome-tagline {
@@ -824,6 +830,25 @@ p.slidebox {
 #next:hover {
 	background-color: #ccc;
 }
+
+
+
+.media-text {
+    font: lighter 5em/1.1em 'Montserrat', sans-serif;
+    color: white;
+	width: 100%;
+	text-align: center;
+    padding-top: 60px;
+	/*text-shadow: 4px 4px 0px #5A5A5A;  */
+    text-shadow: 1px 1px 1px #5a5a5a,
+                 2px 2px 0px #5a5a5a,
+                 3px 3px 0px #5a5a5a,
+                 4px 4px 0px #5a5a5a,
+                 5px 5px 0px #5a5a5a,
+                 6px 6px 0px #5a5a5a;
+}
+
+
 
 #quicklinks {
   position: absolute;
@@ -1193,7 +1218,7 @@ p.slidebox {
     /*padding: 50px 0;*/
 	padding: 25px 0;
 	background-size: cover;
-	background-color: white;
+	background-color: #8c8c8c;
 	/*padding: 15vh 0;*/
 }
 
@@ -1248,44 +1273,6 @@ p.slidebox {
 
 /*~~~~~~~~~CONTACT FLEX BOX~~~~~~~~~~~~*/
 
-
-.flex-container {
-	padding: 0;
-    margin: auto;
-    list-style: none;
-    max-width: 900px;
-    position: relative;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.flex-item {
-    background-size: cover;
-    background-color: #ABABAB;
-    padding: 5px;
-    width: 275px;
-    height: 200px;
-    margin: auto;
-    text-align: center;
-    color: white;
-    font: 2em normal 'Montserrat';
-    box-shadow: 3px 4px #777;
-    border-radius: 9px;
-}
-
-.flex-item:first-child {
-	/*background-color: #2392E0;*/
-}
-
-.flex-item:hover {
-
-}
-
 .nav-logo {
 	max-width: 100%;
 	max-height: 100%;
@@ -1299,59 +1286,6 @@ p.slidebox {
 	color: #555;
     font: normal lighter 50px 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
     text-shadow: 3px 3px 0px #4DA9EB;
-
-}
-
-
-/*#jim {
-	background-image: url('/media/images/8-contact/staff/staff-jimd.png');
-}
-#sean {
-	background-image: url('/media/images/8-contact/staff/staff-seano.png');
-}
-#melody {
-	background-image: url('/media/images/8-contact/staff/staff-melodyh.png');
-}
-#dan {
-	background-image: url('/media/images/8-contact/staff/staff-danm.png');
-}
-#steve {
-	background-image: url('/media/images/8-contact/staff/staff-steved.png');
-}
-#eric {
-	background-image: url('/media/images/8-contact/staff/staff-ericd.png');
-}
-#erin {
-	background-image: url('/media/images/8-contact/staff/staff-erind.png');
-}*/
-
-
-
-/*~~~~~~~~~~END CONTACT FLEX BOX~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~NATIVITY SPECIAL CSS~~~~~~~~~~~~*/
-
-
-.nativity-text {
-    font: lighter 8em 'Rouge Script';
-    color: #fff;
-    width: 100%;
-    text-align: center;
-	text-shadow: 4px 4px 0px #777;
-    letter-spacing: -5px;
-	padding-top: 5vh;
-}
-
-.christmas-tagline {
-	font: lighter 6em 'Rouge Script';
-	padding: 0px 0 25px 0;
-	color: white;
-	text-align: center;
-	text-shadow: 4px 4px 0px #777;
-}
-
-.christmas {
-	background-color: #AE2E2B;
 }
 
 .telephone {
@@ -1365,32 +1299,88 @@ p.slidebox {
 	margin: 0 auto;
 }
 
+.located {
+    background: white;
+    width: 100%;
+    padding: 10px 0 100px 0;
+}
+
+/*~~~~~~~~~~END CONTACT FLEX BOX~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~NATIVITY SPECIAL CSS~~~~~~~~~~~~*/
+
+
+.nativity-header {
+    text-align: center;
+    width: 75vw;
+    min-width: 300px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.nativity-text {
+    position: relative;
+}
+
+.nativity-circle {
+    position: absolute; 
+    top: 45px;
+    left: 55%;
+    width: 250px;
+    -webkit-animation: drop 1s;
+	-moz-animation: drop 1s;
+	-ms-animation: drop 1s;
+	animation: drop 1s;
+}
+
+/************CIRCLE ANIMATION******/
+
+}
+@keyframes drop {
+  0% {top: -250px;}
+  100% {top: 45px;}
+}
+@-moz-keyframes drop {
+  0% {top: -250px;}
+  100% {top: 45px;}
+}
+@-webkit-keyframes drop {
+    0% {top: -250px;}
+  100% {top: 45px;}
+}
+@-ms-keyframes drop {
+    0% {top: -250px;}
+  100% {top: 45px;}
+}
+
+
+
+/***********************************/
+
+
+
+
+
+.nativity-address {
+    color: #989898;
+}
+
+.christmas-tagline {
+    font: 400 4em 'Montserrat';
+    color: white;
+    text-align: center;
+    text-shadow: 3px 4px 0px #961b1e;
+}
+
+.christmas {
+	background-color: #AE2E2B;
+}
+
 #paragraph-christmas {
 	text-align: justify;
 }
 
-
-.christmas-btn {
-    border: 5px solid #777;
-    width: 250px;
-    margin: 15px auto;
-}
-
-.christmas-btn a:hover {
-    color: #999!important;
-}
-/*
-.jingleball {
-	float: right;
-	z-index: 999;
-	display: block;
-	position: relative;
-	width: 250px;
-	margin: 0 45px;
-	top: 35px;
-}*/
-
-.bunnydrop {
+.jingleball, .bunnydrop {
 	float: right;
     z-index: 999;
     display: block;
@@ -1402,7 +1392,7 @@ p.slidebox {
 }
 
 
-.bunnydrop:hover {
+.jingleball:hover, .bunnydrop:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
@@ -1423,23 +1413,53 @@ p.slidebox {
 }
 
 .christmas-text {
-	border-radius: 5px;
-	font: normal lighter 30px 'Roboto', Helvetica, Verdana, Arial, sans-serif;
-	background: white;
-	color: #555;
-	display: block;
+    border-radius: 5px;
+    font: normal 2.25em 'Roboto', Helvetica, Verdana, Arial, sans-serif;
+    background: white;
+    color: #989898;
+    display: block;
     text-align: center;
-    width: 75%;
-	max-width: 1000px;
-    top: 50px;
-    margin: 0 auto 50px auto;
-	padding: 50px;
+    width: 75vw;
+    padding: 40px;
 }
 
 #paragraph-lt {
 	max-width: 660px;
-	margin: 0 auto;
+	margin: 25px auto;
 }
+
+/*********************SNOW*************************/
+
+#snow{
+	background-image: url('../media/images/living-nativity/s1.png');
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 30s linear infinite;
+	-moz-animation: snow 30s linear infinite;
+	-ms-animation: snow 30s linear infinite;
+	animation: snow 30s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+/*********************END SNOW**********************/
 
 /*********************DROP*******************************/
 
@@ -1496,7 +1516,7 @@ animation-delay: 1s;
 /*********************END DROP************************/
 
 
-/**********NEWS WIDGET CSS***********/
+/**********NEWS WIDGET CSS***********
 .overflow-fix {
   box-sizing: border-box;
   height: 300px;
@@ -1519,7 +1539,7 @@ animation-delay: 1s;
   margin: 0;
   padding: 0;
   background-color: inherit;
-}*/
+}*//*
 .news-btn {
   cursor: pointer;
   height: 176px;
@@ -1577,7 +1597,7 @@ animation-delay: 1s;
   }
 }
 .is-open {
-  /*right: -250px;*/
+  /*right: -250px;*//*
   right: 0px;
 
 }
@@ -1742,6 +1762,12 @@ Responsive.
 }
 
 @media (max-width: 668px) {
+    
+    
+    .navbar li ul li {
+    width: 150px;
+    }
+    
 
 	.why-rooted p{
 		font: normal 1.5em 'Open Sans';
@@ -1837,7 +1863,7 @@ Responsive.
 	#pastor-intro {
     font: normal lighter 30px 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
     text-shadow: 2px 2px 0px #c1c1c1;
-    border: 4px solid #777;
+    border: 3px solid #777;
     max-width: 100%;
     margin: 30px auto;
     text-transform: uppercase;
@@ -1880,6 +1906,21 @@ Responsive.
 	.rooted-img {
 	margin: 0px;
 	}
+    
+    .christmas-text {
+    font: normal 2em 'Roboto', Helvetica, Verdana, Arial, sans-serif;
+    width: 95vw;
+    padding: 30px;
+    }
+    
+    .nativity-circle {
+    width: 35%;
+    top: 75px;
+    }
+    
+    .nativity-header {
+    padding-top: 100px;
+    }
 
 }
 
@@ -1915,7 +1956,7 @@ Responsive.
 
 		.content {
 		padding: 2px 0;
-		background: #999;
+/*		background: #999;*/
 
 		}
 
@@ -2027,31 +2068,3 @@ Responsive.
   }
 
 }
-
-	/** CHRISTMAS TEXT
-
-	.christmas {
-	background-color: #AE2E2B;
-	}
-
-	.nativity-text {
-    font: lighter 6em 'Rouge Script';
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    text-shadow: 4px 4px 0px #777;
-    letter-spacing: -5px;
-    padding-top: 75px;
-	}
-
-	.christmas-tagline {
-    font: lighter 3em 'Rouge Script';
-    padding: 0px 0 25px 0;
-    color: white;
-    text-align: center;
-    text-shadow: 4px 4px 0px #777;
-	}
-
-	  END  **/
-
-
