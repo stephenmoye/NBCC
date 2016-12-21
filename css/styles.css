@@ -767,7 +767,7 @@ p.slidebox {
 }
 
 #welcome-text {
-    font: normal 14em/1em 'Montserrat', sans-serif;
+    font: normal 11.5em/.95em 'Montserrat', sans-serif;
     color: white;
 	width: 100%;
 	text-align: center;
@@ -1614,7 +1614,7 @@ Responsive.
 
 @media (min-width: 1400px) {
 	#welcome-text {
-    font: lighter 12em 'Montserrat', sans-serif;
+    font: lighter 12em/.95em 'Montserrat', sans-serif;
 	}
 
 	#welcome-tagline {
