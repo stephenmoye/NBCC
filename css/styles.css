@@ -32,6 +32,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 5px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -51,6 +52,7 @@ h1 {
 
 h2 {
 	font-size: 2em;
+    padding-left: 0;
 }
 
 h3 {
@@ -69,6 +71,10 @@ hr {
     -webkit-margin-end: auto;
     border-style: solid;
     border-width: 1px;
+}
+
+strong {
+    font-weight: bold!important;
 }
 
 a img {
@@ -1110,6 +1116,23 @@ p.slidebox {
   position: relative;
   padding-left: 5px;
 }
+
+#brochure {
+  font-family: sans-serif; 
+}
+
+#brochure h3 {
+  font-size: 2em;
+  font-weight: 300;
+  background: teal;
+  padding: 10px;
+  color: white;
+}
+
+#brochure h4 {
+  font-size: 1.5em;
+}
+
 
 .footer-third-row {
   position: relative;

@@ -1,24 +1,23 @@
-.parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.container {
+    background-color: white;
 }
 
-.parent > div {
+.flex-row {
+    display: inline-flex;
+    flex-direction: column;
+    width: 49vw;
+    margin: auto;
+}
+
+.flex-row > div {
     flex: 1;
 }
 
-.left, .right {
+.flex-col {
     min-width: 250px;
-    min-height: 300px;
-    background: ivory;
-}
-
-.left {
-    
-}
-
-.right {
-
+    min-height: 150px;
+    background: #eee;
+    max-width: 50vw;
+    padding: 10px 20%;
+    margin: 15px;
 }
