@@ -248,7 +248,7 @@ a:hover {
 .btn {
     color: #fff;
     background: #2392E0;
-    font: normal 20px/1.5em 'Roboto', sans-serif;
+    font: normal 17px/1.75em 'Montserrat', sans-serif;
     text-decoration: none;
     text-align: center;
     min-width: 170px;
@@ -971,6 +971,7 @@ p.slidebox {
     top: 40%;
     left: 45%;
 	background-color: #0098FF;
+    background-color: rgba(226, 226, 226, 0.53);
 	border-color: #fff;
 	height: 1.5em;
     width: 1.5em;
@@ -1355,7 +1356,7 @@ p.slidebox {
     margin: 0 auto;
 }
 
-.nativity-text {
+.nativity-text { 
     position: relative;
 }
 
@@ -1389,7 +1390,6 @@ p.slidebox {
     0% {top: -250px;}
   100% {top: 45px;}
 }
-
 
 
 /***********************************/
@@ -1774,9 +1774,10 @@ Responsive.
 		z-index: 999;
 		display: block;
 		position: relative;
-		width: 115px;
+		width: 150px;
 		margin: 0px 3%;
 		top: 48vh;
+        font-size: 2em!important;
 	}
 
 	/*** WIDGET ****/
@@ -2069,7 +2070,8 @@ Responsive.
 		position: relative;
 		width: 135px;
 		margin: 0px auto;
-		top: 68vh;
+		top: 72vh;
+        font-size:1.25em!important;
 	}
 
 }
