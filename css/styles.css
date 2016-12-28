@@ -1422,8 +1422,8 @@ p.slidebox {
     z-index: 999;
     display: block;
     position: relative;
-    width: 26%;
-	max-width: 300px;
+    /*width: 26%;*/
+	max-width: 400px;
     margin: 20px;
     top: 55vh;
 }
