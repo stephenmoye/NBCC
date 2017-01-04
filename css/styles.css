@@ -59,9 +59,8 @@ h3 {
 	font-size: 1.7em;
 }
 
-text {
-
-}
+/*text {
+}*/
 
 hr {
     display: block;
@@ -208,9 +207,7 @@ a:hover {
 	width: 100%;
 }
 
-.navbar ul li{
-
-}
+/*.navbar ul li{}*/
 
 .navbar li ul li a:hover {
   color: #2791f0;
@@ -307,10 +304,10 @@ a:hover {
 	filter: saturate(50%);
 }
 
-.invert {
+/*.invert {
 	-webkit-filter: invert(69%;);
 	filter: invert(69%;);
-}
+}*/
 
 .white {
     background-color: white;
@@ -396,7 +393,6 @@ a:hover {
     height: 360px;
     width: 470px;
     display: inline-block;
-    float: left;
     text-align: center;
     line-height: 30px;
     color: #555;
@@ -881,9 +877,7 @@ p.slidebox {
   top: 25px;
 }
 
-#image1 {
-
-}
+/*#image1 {}*/
 
 #image2 {
 	background-image: url('../media/images/6a-our-story/6a-sect6-bg.png');
@@ -893,9 +887,7 @@ p.slidebox {
 	background-image: url('../media/images/sea3.jpg');
 }
 
-#image4 {
-	background-image:
-}
+/*#image4 {background-image: ;}*/
 
 #jump {
 	background: #fff;
@@ -1141,10 +1133,7 @@ p.slidebox {
   font: 100 1.25em/1em 'Open Sans', sans-serif;
 }
 
-#brochure p {
-
-}
-
+/*#brochure p {}*/
 
 #brochure .banner-text {
   padding-top: 10vh;
@@ -1373,7 +1362,6 @@ p.slidebox {
 
 /************CIRCLE ANIMATION******/
 
-}
 @keyframes drop {
   0% {top: -250px;}
   100% {top: 45px;}
@@ -1730,7 +1718,7 @@ Responsive.
 	  }
 
 	  .btn {
-		width: 25%!imporant;
+		width: 25%!important;
 	  }
 
 	  .group-boxes {
@@ -1827,9 +1815,7 @@ Responsive.
 		 font-size: 70%;
     }
 
-	.nav-logo {
-
-	}
+	/*.nav-logo {}*/
 
   .navbar {
     max-height: 31px;
@@ -1923,7 +1909,7 @@ Responsive.
     font: bolder 24px Montserrat;
 	}
 
-	.#times-location h4 {
+	#times-location h4 {
     text-transform: uppercase;
     font: bolder 1em Montserrat;
     display: inline-block;
@@ -2084,8 +2070,7 @@ Responsive.
     font-size: .7em;
 	}
 
-	#ministry {
-	}
+	/*#ministry {}*/
 
 	#missions {
 	display: none;
